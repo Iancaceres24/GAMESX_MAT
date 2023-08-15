@@ -29,9 +29,9 @@
             
             this.contenedor.innerHTML = `<div class="row align-items-center justify-content-center cont">
                                         <div class="row justify-content-center">
-                                        <span class="col-3 borde "><h3 id="num1" class="tex_main ">${this.num1} * ${this.num2}</h3></span>
+                                        <span class="col-sm-3 col-4 borde "><h3 id="num1" class="tex_main ">${this.num1} * ${this.num2}</h3></span>
                                         <span class="col-3 borde"><h3 class="tex_main ">?</h3></span>
-                                        <span class="col-3 borde"><h3 id="num2" class="tex_main ">${this.num3}</h3></span>
+                                        <span class="col-sm-3 col-3 borde"><h3 id="num2" class="tex_main ">${this.num3}</h3></span>
                                         </div>
                                         <div><h2 class="tex_main">¿QUE SIMBOLO VA?</h2></div>
                                         <div class="row justify-content-center">

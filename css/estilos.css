@@ -20,7 +20,7 @@ body, html {
 
 .logo{
     width: auto;
-    height: 6rem;
+    height: 5rem;
 }
 
 .tex,.tex_main{
@@ -39,7 +39,7 @@ body, html {
     height: 100%;
 }
 .tex_main{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     
 }
@@ -52,8 +52,8 @@ body, html {
 
 
 .borde{
-    border: 1rem solid #102742;
-    height: 20rem;
+    border: 0.5rem solid #102742;
+    height: 19rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@ body, html {
 }
 .btn{
     background-color: #102742;
-    height: 10rem;
+    height: 9rem;
 }
 
 .correcto{
@@ -85,11 +85,6 @@ body, html {
 }
 .img{
     height: auto;
-    width: 5rem;
+    width: 4rem;
     margin: 1rem;
 }
-@media(max-width: 768px) {
-    .img{
-        width: 4rem;
-        
-    }}
