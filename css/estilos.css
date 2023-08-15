@@ -29,7 +29,6 @@ body, html {
     text-decoration: none;
 }
 
-
 /* main */
 #main{
     background-image: url(../img/index_fondo1.jpg);
@@ -42,8 +41,15 @@ body, html {
 .tex_main{
     font-size: 5rem;
     text-align: center;
-
+    
 }
+@media(max-width: 768px) {
+    .tex,.tex_main{
+        font-size: 3rem;
+        
+    }
+}
+
 
 .borde{
     border: 1rem solid #102742;
@@ -52,6 +58,13 @@ body, html {
     align-items: center;
     justify-content: center;
     margin: 1rem;
+    
+}
+@media(max-width: 768px) {
+    .borde{
+        height: 15rem;
+        
+    }
 }
 .btn{
     background-color: #102742;
