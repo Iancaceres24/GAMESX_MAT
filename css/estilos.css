@@ -1,0 +1,72 @@
+
+html{
+    font-size: 62.5%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;}
+.saca_gutter{
+        --bs-gutter-x: 0
+    }
+/* header */
+
+#header{
+    background-color: #102742;
+    position: fixed;
+    width: 100%;
+}
+
+
+.logo{
+    width: auto;
+    height: 6rem;
+}
+
+.tex,.tex_main{
+    color: white;
+    font-family: 'Bruno Ace', cursive;
+    text-decoration: none;
+}
+
+
+/* main */
+#main{
+    background-image: url(../img/index_fondo1.jpg);
+    height: 100%;
+    
+}
+.cont{
+    height: 100%;
+}
+.tex_main{
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.borde{
+    border: 1rem solid #102742;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.btn{
+    background-color: #102742;
+    height: 10rem;
+}
+
+.correcto{
+    background-color: green;
+}
+.incorrecto{
+    background-color: red;
+}
+
+/* footer */
+#footer{
+    background-color: #102742;
+    
+}
