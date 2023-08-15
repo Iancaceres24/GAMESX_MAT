@@ -22,7 +22,7 @@
             btnstart.addEventListener("click", this.mostrar_juego.bind(this),this.numeros(),this.resultado());
             this.aciertos = 0
             this.header = document.getElementById("record")
-            record.innerText=`record: ${this.record}` 
+            record.innerText=`RECORD: ${this.record}` 
         }
 
         mostrar_juego() {
