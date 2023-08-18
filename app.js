@@ -4,10 +4,12 @@
             this.num1 = 0;
             this.num2 = 0;
             this.num3 = 0;
+            this.num4 =
             this.res = "";
             this.sim_mayor = ">";
             this.sim_menor = "<"
             this.sim_igual = "="
+            this.sim = ""
             this.respuesta = ""
             this.contenedor = document.getElementById("main");
             
@@ -52,6 +54,7 @@
             this.aciertos += 1
             this.contenedor.innerHTML =`<div class="row align-items-center justify-content-center cont">
                                         <div class="col-12"><h3 class="tex_main correcto">CORRECTO</h3></div>
+                                        <div class="col-12"><h3 class="tex_main">${this.num4} ${this.sim} ${this.num3}</h3></div>
                                         <div class="col-12"><h3 class="tex_main">Llevas ${this.aciertos} aciertos</h3></div>
                                         <div class="col-10"><button id="btnsiguiente" type="button" class="btn tex_main  col-12">Siguiente</button></div>
                                         </div>`
@@ -64,6 +67,7 @@
             
             this.contenedor.innerHTML =`<div class="row align-items-center justify-content-center cont">
                                         <div class="col-12"><h3 class="tex_main incorrecto">INCORRECTO</h3></div>
+                                        <div class="col-12"><h3 class="tex_main ">${this.num4} ${this.sim} ${this.num3}</h3></div>
                                         <div class="col-12"><h3 class="tex_main">Hiciste ${this.aciertos} aciertos</h3></div>
                                         <div class="col-10"><button id="btnvolver" type="button" class="btn tex_main  col-12">Volver</button></div>
                                         </div>`
@@ -82,8 +86,8 @@
         }
 
         resultado() {
-            let num4 = this.num1 * this.num2;
-            this.res = num4 === this.num3 ? "=" : (this.res = num4 > this.num3 ? ">" : "<");
+            this.num4 = this.num1 * this.num2;
+            this.res = this.num4 === this.num3 ? "=" : (this.res = this.num4 > this.num3 ? ">" : "<");
             return this.res;
         }
 
@@ -91,12 +95,17 @@
             
             if(this.res===this.sim_mayor){
                 this.respuesta = "correcto"
+                
             }else{
                 this.respuesta = "incorrecto"
+                
             }
             if(this.respuesta ==="correcto"){
+                this.sim = "es mayor que"
                 this.mostrar_correcto() 
+                
             }else{
+                this.sim = "no es mayor que"
                 this.mostrar_incorrecto()
             }
             
@@ -111,9 +120,13 @@
                 this.respuesta = "incorrecto"
             }
             if(this.respuesta ==="correcto"){
+                this.sim = "es menor que"
                 this.mostrar_correcto() 
+                
             }else{
+                this.sim = "no es menor que"
                 this.mostrar_incorrecto()
+                
             }
             console.log(this.respuesta)
             return this.respuesta
@@ -127,8 +140,11 @@
                 this.respuesta = "incorrecto"
             }
             if(this.respuesta ==="correcto"){
+                this.sim = "es igual que"
                 this.mostrar_correcto() 
+                
             }else{
+                this.sim = "no es igual que"
                 this.mostrar_incorrecto()
             }
             console.log(this.respuesta)
